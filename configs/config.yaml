@@ -1,0 +1,24 @@
+mlflow:
+  tracking-server: 'dagshub'
+  dagshub:
+    - repo-owner: 'K14aNB'
+    - experiment-name: 'House-Prices-Kaggle-Competition'
+
+notebooks:
+  House-Prices-Kaggle-Competition-EDA:
+    data:
+      - source: 'kaggle-competition'
+      - data-src-path: 'house-prices-advanced-regression-techniques'
+    outputs:
+      - nb-html-preview: 'true'
+      - py-percent-script: 'true'
+      - output-path: 'Notebooks'
+
+  House-Prices-Kaggle-Competition-Submission:
+    data:
+      - source: 'kaggle-competition'
+      - data-src-path: 'house-prices-advanced-regression-techniques'
+    outputs:
+      - nb-html-preview: 'false'
+      - py-percent-script: 'true'
+      - output-path: 'Notebooks'
