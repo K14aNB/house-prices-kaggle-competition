@@ -1,0 +1,7 @@
+mlflow
+pandas==2.2.2
+scikit-learn==1.4.2
+seaborn==0.13.1
+PyYAML
+xgboost
+env_setup @ git+https://github.com/K14aNB/setup-notebook-environment.git@main
