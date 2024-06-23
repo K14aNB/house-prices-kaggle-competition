@@ -13,6 +13,15 @@ notebooks:
       - nb-html-preview: 'true'
       - py-percent-script: 'true'
       - output-path: 'Notebooks'
+  
+  House-Prices-Kaggle-Competition-Pipeline:
+    data:
+      - source: 'kaggle-competition'
+      - data-src-path: 'house-prices-advanced-regression-techniques'
+    outputs:
+      - nb-html-preview: 'true'
+      - py-percent-script: 'true'
+      - output-path: 'Notebooks'
 
   House-Prices-Kaggle-Competition-Submission:
     data:
