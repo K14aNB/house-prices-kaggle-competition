@@ -530,10 +530,10 @@ SaleCondition: Condition of sale
        Partial	Home was not completed when last assessed (associated with New Homes)  
 
 ## Exploratory Data Analysis
-**Notebook preview** -
+**Notebook preview** - https://k14anb.github.io/house-prices-kaggle-competition/Notebooks/House-Prices-Kaggle-Competition-EDA.html
 
 ## Pipelines
-**Notebook preview** - 
+**Notebook preview** - https://k14anb.github.io/house-prices-kaggle-competition/Notebooks/House-Prices-Kaggle-Competition-Pipeline.html
 
 ### Experiment Tracking
 **MLFlow UI** - https://dagshub.com/K14aNB/House-Prices-Kaggle-Competition.mlflow/#/experiments/0?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D
