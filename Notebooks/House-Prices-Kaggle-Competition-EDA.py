@@ -571,7 +571,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OrdinalEncoder,LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import mutual_info_regression
-import mlflow
+import pickle
 import env_setup
 import os
 
@@ -633,17 +633,19 @@ def visualize(plot:str,x:str,data:str,xlabel:str,y:str=None,hue:str=None,ylabel:
             sns.scatterplot(x=x,y=y,hue=hue,data=data)
         else:
             sns.scatterplot(x=x,y=y,data=data)
+        plt.title(f'Scatter plot of {xlabel} and {ylabel}')
     elif plot=='bar' and y is not None:
         if hue is not None:
             sns.barplot(x=x,y=y,hue=hue,data=data)
         else:
             sns.barplot(x=x,y=y,data=data)
+        plt.title(f'Scatter plot of {xlabel} and {ylabel}')
     elif plot=='box':
         sns.boxplot(x=x,data=data)
+        plt.title(f'Box plot for {xlabel}')
 
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
-    plt.title(f'{xlabel} vs {ylabel}')
     plt.show()
 
 
@@ -870,3 +872,12 @@ mi_scores.unique()
 
 # %%
 mi_scores[mi_scores>=0.2]
+
+# %% [markdown]
+# **Dump the Mutual Information scores in a pickle**
+
+# %%
+with open('mi_scores.pkl','wb') as pkl:
+    pickle.dump(mi_scores,pkl)
+
+# %%
