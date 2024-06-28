@@ -535,5 +535,7 @@ SaleCondition: Condition of sale
 ## Pipelines
 **Notebook preview** - https://k14anb.github.io/house-prices-kaggle-competition/Notebooks/House-Prices-Kaggle-Competition-Pipeline.html
 
+![image](https://github.com/K14aNB/house-prices-kaggle-competition/assets/120369079/d69039c4-e8d4-4524-ac09-ec77d1b79ad5)
+
 ### Experiment Tracking
 **MLFlow UI** - https://dagshub.com/K14aNB/House-Prices-Kaggle-Competition.mlflow/#/experiments/0?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D
